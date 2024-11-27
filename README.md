@@ -35,5 +35,5 @@ cd EnergyScoreSystem
 5.Run the Python script for Approach 2:
 python approach2.py
 
-6.The energy score for each row in the dataset will be calculated and saved in a new file called energy_score_results1.csv.
+6.The energy score for each row in the dataset will be calculated and saved in a new file called energy_scores_output.csv.
 
