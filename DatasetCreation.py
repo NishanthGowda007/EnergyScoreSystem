@@ -23,6 +23,6 @@ def generate_dataset(num_entries):
 num_entries = 100
 dataset = generate_dataset(num_entries)
 
-dataset.to_csv("random_health_dataset_with_extra_columns.csv", index=False)
+dataset.to_csv("synthetic_health_data1.csv", index=False)
 
 print(dataset)
