@@ -13,13 +13,16 @@ def generate_dataset(num_entries):
         "protein": [random.randint(50, 120) for _ in range(num_entries)],
         "carbohydrates": [random.randint(100, 250) for _ in range(num_entries)],
         "fat": [random.randint(40, 120) for _ in range(num_entries)],
+        
+        "age": [random.randint(18, 75) for _ in range(num_entries)], 
+        "gender": [random.choice(["male", "female"]) for _ in range(num_entries)],  
+        "lifestyle": [random.choice(["lazy", "active", "highly_active"]) for _ in range(num_entries)], 
     }
     return pd.DataFrame(data)
 
 num_entries = 100
 dataset = generate_dataset(num_entries)
 
-
-dataset.to_csv("random_health_dataset.csv", index=False)
+dataset.to_csv("random_health_dataset_with_extra_columns.csv", index=False)
 
 print(dataset)
