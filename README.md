@@ -8,4 +8,4 @@ This project calculates an "energy score" based on input data such as physical a
 2. Navigate to the `EnergyScoreSystem` folder.
 3. Run the Python script using:
    ```bash
-   python energy_score.py
+   python approach1.py
