@@ -28,7 +28,6 @@ def calculate_energy_score(data):
 
     stress_score = max(0, 10 - stress_level * 2)
 
-    # Combine all scores
     total_score = activity_score + nutrition_score + sleep_quality + stress_score
     return round(total_score, 2)
 
