@@ -45,7 +45,7 @@ def normalize_scores(age, gender, lifestyle, energy_score):
     elif lifestyle == "highly_active":
         energy_score *= 1.2  
 
-    return min(max(energy_score, 0), 100)
+    return round(min(max(energy_score, 0), 100), 2)
 
 input_data = {
     "steps": 8000,
@@ -78,4 +78,4 @@ input_data = {
 base_energy_score = calculate_energy_score(input_data)
 normalized_energy_score = normalize_scores(input_data["age"], input_data["gender"], input_data["lifestyle"], base_energy_score)
 
-print(f"Final Normalized Energy Score: {normalized_energy_score}")
+print(f"Final Normalized Energy Score: {round(normalized_energy_score, 2)}")
