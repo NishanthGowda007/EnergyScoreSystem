@@ -38,7 +38,7 @@ def normalize_scores(age, gender, lifestyle, energy_score):
     if gender == "female":
         energy_score *= 0.95  
 
-    if lifestyle == "sedentary":
+    if lifestyle == "lazy":
         energy_score *= 0.8  
     elif lifestyle == "active":
         energy_score *= 1.1  
